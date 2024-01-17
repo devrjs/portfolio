@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --hue-color: 240; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --radius: 0.5rem;
+
+    /* bg container */
+    --background: var(--hue-color) 60% 99%;
+    --card: var(--hue-color) 60% 99%;
+    --popover: var(--hue-color) 60% 99%;
+
+    /* text color */
+    --foreground: var(--hue-color) 8% 45%;
+    --card-foreground: var(--hue-color) 8% 45%;
+    --popover-foreground: var(--hue-color) 8% 45%;
+
+    /* bg primary */
+    --primary: var(--hue-color) 69% 61%;
+    --ring: var(--hue-color) 69% 61%;
+
+    /* text primary */
+    --primary-foreground: var(--hue-color) 0% 100%;
+
+    /* bg container secondary */
+    --secondary: var(--hue-color) 69% 61%;
+    --muted: var(--hue-color) 69% 61%;
+    --accent: var(--hue-color) 69% 61%;
+
+    /* text color secondary */
+    --secondary-foreground: var(--hue-color) 8% 15%;
+    --accent-foreground: var(--hue-color) 8% 15%;
+
+    /* text disabled */
+    --muted-foreground: var(--hue-color) 8% 65%;
+
+    /* input */
+    --input: var(--hue-color) 70% 96%;
+    --border: var(--hue-color) 70% 96%;
+
+    /* alert */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --scroll-bar-color: hsl(var(--hue-color) 12% 90%);
+    --scroll-thumb-color: hsl(var(--hue-color) 12% 80%);
+  }
+
+  .dark {
+    /* bg container */
+    --background: var(--hue-color) 30% 8%;
+    --card: var(--hue-color) 28% 12%;
+    --popover: var(--hue-color) 8% 15%;
+
+    /* text color */
+    --foreground: var(--hue-color) 8% 75%;
+    --card-foreground: var(--hue-color) 8% 75%;
+    --popover-foreground: var(--hue-color) 8% 75%;
+
+    /* bg primary */
+    --primary: var(--hue-color) 69% 61%;
+    --ring: var(--hue-color) 57% 53%;
+
+    /* text primary */
+    --primary-foreground: var(--hue-color) 0% 100%;
+
+    /* bg container secondary */
+    --secondary: var(--hue-color) 30% 5%;
+    --muted: var(--hue-color) 30% 8%;
+    --accent: var(--hue-color) 30% 8%;
+
+    /* text color secondary */
+    --secondary-foreground: var(--hue-color) 8% 95%;
+    --accent-foreground: var(--hue-color) 8% 95%;
+
+    /* text disabled */
+    /* --muted-foreground: var(--hue-color) 8% 65; */
+
+    /* input */
+    --input: var(--hue-color) 29% 16%;
+    --border: var(--hue-color) 29% 16%;
+
+    /* alert */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+
+    --scroll-bar-color: hsl(var(--hue-color) 12% 48%);
+    --scroll-thumb-color: hsl(var(--hue-color) 12% 36%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply antialiased;
+  }
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: var(--scroll-bar-color);
+    border-radius: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--hue-color), 8%, 65%);
+  }
+}
