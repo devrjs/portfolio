@@ -13,10 +13,13 @@ Fascinado com a rapidez das inovações em front-end, invisto todo meu tempo liv
 - TailwindCSS
 - Node.js
 
+Entre outros.
+
 ### Formação acadêmica
 
-- Bacharelado em Análise de Sistemas pela FATEC.
+- Técnico em informática pela ETEC (Voltado para programação)
+- Bacharelado em Análise e Desenvolvimento de Sistemas pela FATEC
 
 ### Contato
 
-Entre em contato pelo email vitorjgomes25@gmail.com ou pelo telefone +55 (18) 99122-2161.
+Entre em contato pelo email developervitorg@gmail.com ou pelo telefone +55 (18) 99122-2161.

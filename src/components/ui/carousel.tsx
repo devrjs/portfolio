@@ -2,8 +2,14 @@
 
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons'
 import useEmblaCarousel, {
+  // eslint-disable-next-line
+  // @ts-ignore:next-line
   type EmblaCarouselType as CarouselApi,
+  // eslint-disable-next-line
+  // @ts-ignore:next-line
   type EmblaOptionsType as CarouselOptions,
+  // eslint-disable-next-line
+  // @ts-ignore:next-line
   type EmblaPluginType as CarouselPlugin,
 } from 'embla-carousel-react'
 import * as React from 'react'
@@ -255,6 +261,5 @@ export {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-  type CarouselApi
+  type CarouselApi,
 }
-

@@ -20,6 +20,7 @@ export function Navlinks({ items }: NavlinksProps) {
       map[key] = value
       return map
     },
+    // eslint-disable-next-line
     {} as Record<string, React.ComponentType<any>>,
   )
 
