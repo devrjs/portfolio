@@ -20,23 +20,22 @@ export function PortfolioCarousel() {
     Autoplay({ delay: 4000, stopOnInteraction: true }),
   )
 
-  const portfolioData: Array<object> = []
-  // [
-  //   {
-  //     image: '/portfolio1.png',
-  //     title: 'UPLOAD.AI',
-  //     description:
-  //       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repellendus officia minima maiores a natus exercitationem molestiae porro laboriosam labore.',
-  //     link: 'https://github.com/devrjs',
-  //   },
-  //   {
-  //     image: '/portfolio2.png',
-  //     title: 'Spacetime',
-  //     description:
-  //       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repellendus officia minima maiores a natus exercitationem molestiae porro laboriosam labore.',
-  //     link: 'https://github.com/devrjs',
-  //   },
-  // ]
+  const portfolioData = [
+    {
+      image: '/portfolio1.png',
+      title: 'Economic Plus',
+      description:
+        'Projeto pessoal criado para o Trabalho de Conclusão de Curso na faculdade, dedicado a um sistema inovador que revoluciona o controle financeiro, abrangendo tanto as finanças pessoais quanto as empresariais.',
+      link: 'https://economic-plus.vercel.app/',
+    },
+    // {
+    //   image: '/portfolio2.png',
+    //   title: 'UPLOAD.AI',
+    //   description:
+    //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repellendus officia minima maiores a natus exercitationem molestiae porro laboriosam labore.',
+    //   link: 'https://github.com/devrjs',
+    // },
+  ]
 
   return (
     <Carousel
