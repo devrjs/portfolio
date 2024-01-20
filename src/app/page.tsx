@@ -1,4 +1,5 @@
 import { Blob } from '@/components/Blob'
+import { EmailForm } from '@/components/EmailForm'
 import { PortfolioCarousel } from '@/components/PortfolioCarousel'
 import { SkillsSlide } from '@/components/SkillsSlide'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
@@ -9,8 +10,11 @@ import { skillsBackend, skillsFrontend } from '@/config/skills'
 import {
   BracketsCurly,
   Download,
+  Envelope,
   HardDrives,
+  MapPin,
   PaperPlaneRight,
+  Phone,
 } from '@phosphor-icons/react/dist/ssr'
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
@@ -73,7 +77,7 @@ export default function Index() {
               paixão por desenvolvimento de software.
             </p>
 
-            <Button asChild className="h-14 w-fit">
+            <Button asChild className="h-12 w-fit">
               <Link download="" href="/CV_Vitor.pdf">
                 Download CV <Download className="ml-2 h-6 w-6" />
               </Link>
@@ -98,14 +102,14 @@ export default function Index() {
 
       <section
         id="skills"
-        className="flex w-screen max-w-[968px] flex-col items-center pb-4 pt-20 md:pt-28"
+        className="flex w-full max-w-[968px] flex-col items-center pb-4 pt-20 md:pt-28"
       >
         <h2 className="text-2xl font-semibold text-accent-foreground">
           Habilidades
         </h2>
         <span className="mb-12 text-sm">Tecnologias</span>
 
-        <div className="mb-20 grid w-full max-w-3xl grid-cols-2 gap-12">
+        <div className="mb-20 grid w-full max-w-3xl grid-cols-1 gap-12 sm:grid-cols-2">
           <div className="flex flex-col gap-6">
             <div className="mb-2 flex items-center gap-4">
               <BracketsCurly size={40} className="text-primary" />
@@ -172,13 +176,42 @@ export default function Index() {
 
       <section
         id="contact"
-        className="flex w-screen max-w-3xl flex-col items-center pb-4 pt-20 md:pt-28"
+        className="mb-14 flex w-screen max-w-3xl flex-col items-center pb-4 pt-20 md:pt-28"
       >
         <h2 className="text-2xl font-semibold text-accent-foreground">
           Entre em Contato
         </h2>
         <span className="mb-12 text-sm">Formas de contato</span>
-        <span className="">🛠️ Em construção 🏗️</span>
+
+        <div className="grid w-full grid-cols-1 gap-12 px-4 sm:grid-cols-2">
+          <div className="flex flex-col gap-8 overflow-x-auto text-nowrap py-6">
+            <div className="flex w-fit items-center gap-3">
+              <Phone className="h-10 w-10 text-primary" />
+              <div className="flex flex-col gap-1">
+                <h3 className="text-accent-foreground">Whatsapp</h3>
+                <span>{'+55 (18) 99122-2161'}</span>
+              </div>
+            </div>
+
+            <div className="flex w-fit items-center gap-3">
+              <Envelope className="h-10 w-10 text-primary" />
+              <div className="flex flex-col gap-1">
+                <h3 className="text-accent-foreground">Email</h3>
+                <span>developervitorg@gmail.com</span>
+              </div>
+            </div>
+
+            <div className="flex w-fit items-center gap-3">
+              <MapPin className="h-10 w-10 text-primary" />
+              <div className="flex flex-col gap-1">
+                <h3 className="text-accent-foreground">Localização</h3>
+                <span>Brasil - Presidente Prudente, SP</span>
+              </div>
+            </div>
+          </div>
+
+          <EmailForm />
+        </div>
       </section>
     </main>
   )

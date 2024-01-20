@@ -18,7 +18,7 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed bottom-0 left-0 z-20 flex h-12 w-full justify-center gap-2 bg-background text-sm font-medium text-accent-foreground shadow-[0_-1px_4px_rgba(0,0,0,0.15)] md:top-0 md:h-16 md:px-4 md:shadow-none">
+    <header className="fixed bottom-0 left-0 z-20 flex h-12 w-full justify-center gap-2 bg-background text-sm font-medium text-accent-foreground shadow-[0_-1px_4px_rgba(0,0,0,0.15)] md:top-0 md:h-16 md:px-4 dark:shadow-[0_-1px_14px_rgba(255,255,255,0.1)]">
       <nav className="flex w-[968px] items-center justify-between gap-4">
         <Link
           href="#"

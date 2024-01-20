@@ -1,5 +1,9 @@
 export const skillsFrontend = [
   {
+    name: 'TypeScript',
+    percentage: 90,
+  },
+  {
     name: 'React',
     percentage: 90,
   },
@@ -8,8 +12,16 @@ export const skillsFrontend = [
     percentage: 85,
   },
   {
-    name: 'Tailwindcss',
+    name: 'TailwindCSS',
     percentage: 90,
+  },
+  {
+    name: 'ReactQuery',
+    percentage: 70,
+  },
+  {
+    name: 'Zod',
+    percentage: 80,
   },
 ]
 
@@ -25,6 +37,14 @@ export const skillsBackend = [
   {
     name: 'Prisma',
     percentage: 80,
+  },
+  {
+    name: 'Jest',
+    percentage: 75,
+  },
+  {
+    name: 'Firebase',
+    percentage: 85,
   },
 ]
 

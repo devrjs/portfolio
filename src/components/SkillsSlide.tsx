@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 export function SkillsSlide() {
   return (
-    <div className="flex w-full flex-col gap-8 py-12 lg:rounded-2xl dark:bg-card">
+    <div className="flex w-screen flex-col gap-8 py-12 xl:max-w-4xl xl:rounded-2xl dark:bg-card">
       <Swiper
         slidesPerView={2}
         loop={true}
