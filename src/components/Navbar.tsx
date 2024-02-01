@@ -4,21 +4,41 @@ import { siteConfig } from '@/config/site'
 import { Moon, SquaresFour, Sun, X } from '@phosphor-icons/react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Navlinks } from './Navlinks'
 import { Button } from './ui/button'
 
 export function Navbar() {
   const { setTheme, theme } = useTheme()
   const [openNav, setOpenNav] = useState(false)
+  const [headerShadow, setHeaderShadow] = useState(false)
 
   function handleNav() {
     setOpenNav(!openNav)
     console.log(openNav)
   }
 
+  useEffect(() => {
+    const scrollHeader = () => {
+      const scrollPosition = window.scrollY
+
+      if (scrollPosition >= 80) {
+        setHeaderShadow(true)
+      } else {
+        setHeaderShadow(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollHeader)
+  }, [])
+
   return (
-    <header className="fixed bottom-0 left-0 z-20 flex h-12 w-full justify-center gap-2 bg-background text-sm font-medium text-accent-foreground shadow-[0_-1px_4px_rgba(0,0,0,0.15)] md:top-0 md:h-16 md:px-4 dark:shadow-[0_-1px_14px_rgba(255,255,255,0.1)]">
+    <header
+      className={`fixed bottom-0 left-0 z-20 flex h-12 w-full justify-center gap-2 bg-background text-sm font-medium text-accent-foreground ${
+        headerShadow &&
+        'shadow-[0_-1px_4px_rgba(0,0,0,0.15)] dark:shadow-[0_-1px_14px_rgba(255,255,255,0.1)]'
+      } md:top-0 md:h-16 md:px-4`}
+    >
       <nav className="flex w-[968px] items-center justify-between gap-4">
         <Link
           href="#"

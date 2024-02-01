@@ -71,10 +71,10 @@ export default function Index() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div className="flex flex-col gap-6 sm:order-1">
             <p>
-              Iniciando na área de tecnologia após concluir meu Bacharelado em
-              Análise e Desenvolvimento de Sistemas, busco ansiosamente minha
-              primeira oportunidade para aplicar meus conhecimentos acadêmicos e
-              paixão por desenvolvimento de software.
+              Iniciando na área de tecnologia após me graduar em Análise e
+              Desenvolvimento de Sistemas, busco ansiosamente minha primeira
+              oportunidade para aplicar meus conhecimentos acadêmicos e paixão
+              por desenvolvimento de software.
             </p>
 
             <Button asChild className="h-12 w-fit">
