@@ -13,11 +13,11 @@ export const siteConfig = {
       href: '#about',
       icon: 'User',
     },
-    {
-      title: 'Habilidades',
-      href: '#skills',
-      icon: 'FileText',
-    },
+    // {
+    //   title: 'Habilidades',
+    //   href: '#skills',
+    //   icon: 'FileText',
+    // },
     {
       title: 'Portfólio',
       href: '#portfolio',

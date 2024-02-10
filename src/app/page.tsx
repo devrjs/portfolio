@@ -100,7 +100,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section
+      {/* <section
         id="skills"
         className="flex w-full max-w-[968px] flex-col items-center pb-4 pt-20 md:pt-28"
       >
@@ -160,7 +160,7 @@ export default function Index() {
         </div>
 
         <SkillsSlide />
-      </section>
+      </section> */}
 
       <section
         id="portfolio"
