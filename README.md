@@ -17,8 +17,8 @@ Entre outros.
 
 ### Formação acadêmica
 
-- Técnico em informática pela ETEC (Voltado para programação)
-- Bacharelado em Análise e Desenvolvimento de Sistemas pela FATEC
+- Graduado em Análise e Desenvolvimento de Sistemas pela FATEC
+- Técnico em informática (Desenvolvimento de Sistemas) pela ETEC
 
 ### Contato
 
